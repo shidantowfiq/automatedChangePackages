@@ -44,6 +44,6 @@ jobs:
         host: ${{ secrets.REMOTE_HOST }}
         privateKey: ${{ secrets.KEY }} 
         localDir: ${{ steps.download.outputs.download-path }}
-        remoteDir: '/upload/hotfolders/git/in'
+        remoteDir: ${{ vars.SFTP_PATH }}$
         dryRun: false
         username: ${{ secrets.USERNAME }} 

@@ -1,7 +1,7 @@
 ### Prerequisites:
-- Change Packages should be stored under `REPO_PATH`
-- To use workflows user must create key pair used to connect via `SFTP` with remote server and have permissions to connect and upload using these credentials.
-- For workflow 'Create Change Package on change' path to the repository (`stibo-user` in the following example) needs to be directly modified, here is the fragment where change has to be applied:
+- Change Packages must be stored under a folder below the branch, such as the name of the system where the change package was created or another grouping name, which is defined using the Directory Template field in the OIEP delivery configuration using 'Change Package Git Delivery' method (e.g. $systemname$/$changepackageid$). This folder label is defined by '$systemname$' in this example, and will be used in the `REPO_PATH` variable.
+- To use workflows, the user must create public/private key pairs, which are also used to connect via SFTP from a local computer, using Open SSH format, where the key starts with '-----BEGIN OPENSSH PRIVATE KEY-----' and ends with '-----END OPENSSH PRIVATE KEY-----'. The remote server must have permissions to connect and upload using these credentials. A recommended approach of using a local scp/sftp client to confirm access to the sftp before setting up automation.
+- For the workflow 'Send Change Package on Change', update the branch if using something different from "main" and set path to be monitored for change within the repository. Prior to running the action, update this code, replacing `stibo-user` with the value that REPO_PATH resolves to, followed by '/**'):
   ```
   on:
   push:
@@ -9,17 +9,17 @@
     paths:
       - 'stibo-user/**'
   ```
-  optionally branch name also can be modiefied.
+
 
 ### Following secrets and variables must be provided
 ` Settings -> Secrets and Variables -> Actions`
 
 #### Secrets:
-- `REMOTE_HOST` - url of SFTP host.
-- `USERNAME` - username used to connect to remote host with priviledges to upload.
-- `KEY` - SSH private key of user.
+- `REMOTE_HOST` - URL of the SFTP host AKA Host Name. For Stibo SaaS systems, this is in the format of '[yourSystemName]-sftp.mdm.stibosystems.com'.
+- `USERNAME` - User name that is used to connect to the remote host with priviledges to upload. For Stibo SaaS systems, this is the Username (DNS-1123 compliant) configured in the Accounts area of the SFTP Access Control screen.
+- `KEY` - SSH private key of user in Open SSH format, which is related to the public key configured on the SFTP Account of the Username on Stibo SaaS systems.
 
 Above secrets are used by external action: https://github.com/wangyucode/sftp-upload-action and there are more info about possible parameters. They can be applied only to job `SFTP uploader`.
 
 #### Variables:
-- `REPO_PATH` - path of the repository containing CP's followed by forward slash. In this case `stibo-user/`.
+- `REPO_PATH` - the path below the Branch of the repository containing change packages, followed by a forward slash. In this example `stibo-user/` (not including quotes) is the value for the Repository variable.

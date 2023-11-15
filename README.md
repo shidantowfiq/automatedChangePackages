@@ -1,7 +1,7 @@
 ### Prerequisites:
-- Change Packages must be stored under a folder below the branch, such as the name of the system where the change package was created or another grouping name, which is defined using the Directory Template field in the OIEP delivery configuration using 'Change Package Git Delivery' method (e.g. $systemname$/$changepackageid$). This folder label is defined by '$systemname$' in this example, and will be used in the `REPO_PATH` variable.
-- To use workflows, the user must create public/private key pairs, which are also used to connect via SFTP from a local computer, using Open SSH format, where the key starts with '-----BEGIN OPENSSH PRIVATE KEY-----' and ends with '-----END OPENSSH PRIVATE KEY-----'. The remote server must have permissions to connect and upload using these credentials. A recommended approach of using a local scp/sftp client to confirm access to the sftp before setting up automation.
-- For the workflow 'Send Change Package on Change', update the branch if using something different from "main" and set path to be monitored for change within the repository. Prior to running the action, update this code, replacing `stibo-user` with the value that REPO_PATH resolves to, followed by '/**'):
+- Change Packages must be stored under a folder below the branch, such as the name of the system where the change package was created or another grouping name, which is defined using the Directory Template field in the OIEP delivery configuration using 'Change Package Git Delivery' method (e.g. '$systemname$/$changepackageid$'). This folder label is defined by '$systemname$' in this example, and will be used in the `REPO_PATH` variable.
+- To use workflows, the user must create public/private key pairs, which are also used to connect via SFTP from a local computer, using Open SSH format, where the key starts with '-----BEGIN OPENSSH PRIVATE KEY-----' and ends with '-----END OPENSSH PRIVATE KEY-----'. The remote server must have permissions to connect and upload using these credentials. It is recommended to setup a local scp/sftp client on your computer to confirm access to the sftp and the ability to write a file before setting up this automation.
+- For the workflow 'Send Change Package on Change', update the branch if you are using something other than "main" and set the 'paths:' value, which is the folder that is monitored for changes within the repository. Prior to running the action, update this code, replacing `stibo-user` with the value that REPO_PATH resolves to, followed by '/**'):
   ```
   on:
   push:
@@ -11,8 +11,8 @@
   ```
 
 
-### Following secrets and variables must be provided
-` Settings -> Secrets and Variables -> Actions`
+### The Following Action Secrets and Variables must be Defined
+` Go to Settings -> Secrets and Variables -> Actions`
 
 #### Secrets:
 - `REMOTE_HOST` - URL of the SFTP host AKA Host Name. For Stibo SaaS systems, this is in the format of '[yourSystemName]-sftp.mdm.stibosystems.com'.

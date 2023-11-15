@@ -23,3 +23,4 @@ The secrets above are used by the external action: https://github.com/wangyucode
 
 #### Variables:
 - `REPO_PATH` - the path below the Branch of the repository containing change packages, followed by a forward slash. In this example `stibo-user/` (not including quotes) is the value for the Repository variable.
+- `SFTP_PATH` - the path on the application server where the hotfolder on the IIEP is configured to receive files.  

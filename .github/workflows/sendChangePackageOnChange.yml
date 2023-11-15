@@ -63,3 +63,13 @@ jobs:
         remoteDir: ${{ vars.SFTP_PATH }}
         dryRun: false
         username: ${{ secrets.USERNAME }} 
+  invoke-endpoint:
+    needs: [detect-directory-changes, create-change-package, send-file-via-sftp]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dir: ${{ fromJson(needs.detect-directory-changes.outputs.changed) }}
+    steps:
+    - name: Dir name
+      id: dir-name
+      run: curl -X 'POST' '${{ secrets.STEP_SERVER_URL }}/restapiv2/inbound-integration-endpoints/${{ secrets.STEP_INTEGRATION_ENDPOINT_ID }}/invoke?context=${{ secrets.STEP_CONTEXT_ID }}&workspace=Main' -H '${{ secrets.STEP_AUTH_HEADER }}'

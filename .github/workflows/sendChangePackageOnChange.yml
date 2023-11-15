@@ -72,4 +72,4 @@ jobs:
     steps:
     - name: Dir name
       id: dir-name
-      run: curl -X 'POST' '${{ secrets.STEP_SERVER_URL }}/restapiv2/inbound-integration-endpoints/${{ secrets.STEP_INTEGRATION_ENDPOINT_ID }}/invoke?context=${{ secrets.STEP_CONTEXT_ID }}&workspace=Main' -H '${{ secrets.STEP_AUTH_HEADER }}'
+      run: curl -X 'POST' '${{ vars.STEP_SERVER_URL }}/restapiv2/inbound-integration-endpoints/${{ vars.STEP_INTEGRATION_ENDPOINT_ID }}/invoke?context=${{ vars.STEP_CONTEXT_ID }}&workspace=Main' -H '${{ secrets.STEP_AUTH_HEADER }}'

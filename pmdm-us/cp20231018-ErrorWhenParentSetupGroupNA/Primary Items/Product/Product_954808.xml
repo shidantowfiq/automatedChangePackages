@@ -4,20 +4,60 @@
         <Product ID="954808" UserTypeID="Tree" ParentID="ProductsRoot">
             <Name>Flat Hiearchy 2</Name>
             <Tables>
+                <TableDefinition ContextID="Context1">
+                    <TableXML ID="105421">
+                        <Configuration>H4sIAAAAAAAAALMJLi0oKEotLk5NCUlMyknVtwMAUBFlERIAAAA=</Configuration>
+                    </TableXML>
+                </TableDefinition>
                 <Table ID="105421">
           null        </Table>
+                <TableDefinition ContextID="Context2">
+                    <TableXML ID="105421">
+                        <Configuration>H4sIAAAAAAAAALMJLi0oKEotLk5NCUlMyknVtwMAUBFlERIAAAA=</Configuration>
+                    </TableXML>
+                </TableDefinition>
                 <Table ID="105421">
           null        </Table>
+                <TableDefinition ContextID="Context3">
+                    <TableXML ID="105421">
+                        <Configuration>H4sIAAAAAAAAALMJLi0oKEotLk5NCUlMyknVtwMAUBFlERIAAAA=</Configuration>
+                    </TableXML>
+                </TableDefinition>
                 <Table ID="105421">
           null        </Table>
+                <TableDefinition ContextID="Context4">
+                    <TableXML ID="105421">
+                        <Configuration>H4sIAAAAAAAAALMJLi0oKEotLk5NCUlMyknVtwMAUBFlERIAAAA=</Configuration>
+                    </TableXML>
+                </TableDefinition>
                 <Table ID="105421">
           null        </Table>
+                <TableDefinition ContextID="Context5">
+                    <TableXML ID="105421">
+                        <Configuration>H4sIAAAAAAAAALMJLi0oKEotLk5NCUlMyknVtwMAUBFlERIAAAA=</Configuration>
+                    </TableXML>
+                </TableDefinition>
                 <Table ID="105421">
           null        </Table>
+                <TableDefinition ContextID="Context6">
+                    <TableXML ID="105421">
+                        <Configuration>H4sIAAAAAAAAALMJLi0oKEotLk5NCUlMyknVtwMAUBFlERIAAAA=</Configuration>
+                    </TableXML>
+                </TableDefinition>
                 <Table ID="105421">
           null        </Table>
+                <TableDefinition ContextID="Context7">
+                    <TableXML ID="105421">
+                        <Configuration>H4sIAAAAAAAAALMJLi0oKEotLk5NCUlMyknVtwMAUBFlERIAAAA=</Configuration>
+                    </TableXML>
+                </TableDefinition>
                 <Table ID="105421">
           null        </Table>
+                <TableDefinition ContextID="Netherlands">
+                    <TableXML ID="105421">
+                        <Configuration>H4sIAAAAAAAAALMJLi0oKEotLk5NCUlMyknVtwMAUBFlERIAAAA=</Configuration>
+                    </TableXML>
+                </TableDefinition>
                 <Table ID="105421">
           null        </Table>
             </Tables>

@@ -6,7 +6,7 @@ on:
       name:
         type: string
         required: true
-        description: Change Package name
+        description: Enter Change Package Name
 jobs:
   create-change-package:
     runs-on: ubuntu-latest

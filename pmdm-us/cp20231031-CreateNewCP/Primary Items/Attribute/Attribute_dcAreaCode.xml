@@ -7,7 +7,7 @@
     </Qualifiers>
     <AttributeList>
         <Attribute ID="dcAreaCode" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Mandatory="false">
-            <Name QualifierID="en-US">Area Code</Name>
+            <Name QualifierID="en-US">Phone Area Code</Name>
             <Validation BaseType="number" MinValue="" MaxValue="" MaxLength="" InputMask=""></Validation>
             <AttributeGroupLink AttributeGroupID="dcPhoneNumbers"></AttributeGroupLink>
             <UserTypeLink UserTypeID="Entity"></UserTypeLink>

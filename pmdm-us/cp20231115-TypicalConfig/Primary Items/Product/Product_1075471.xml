@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STEP-ProductInformation ContextID="Context1" WorkspaceID="Main" UseContextLocale="false">
+    <Products>
+        <Product ID="1075471" UserTypeID="Level2" ParentID="127420">
+            <Name>Accessories</Name>
+            <AttributeLink AttributeID="PedalType"></AttributeLink>
+            <Tables>
+                <Table ID="105421">
+          null        </Table>
+                <Table ID="105421">
+          null        </Table>
+                <Table ID="105421">
+          null        </Table>
+                <Table ID="105421">
+          null        </Table>
+                <Table ID="105421">
+          null        </Table>
+                <Table ID="105421">
+          null        </Table>
+                <Table ID="105421">
+          null        </Table>
+                <Table ID="105421">
+          null        </Table>
+            </Tables>
+        </Product>
+    </Products>
+</STEP-ProductInformation>

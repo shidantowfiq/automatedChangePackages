@@ -12,7 +12,7 @@
 
 
 ### The Following Action Secrets and Variables must be Defined
-` Go to Settings -> Secrets and Variables -> Actions`
+Go to `Settings -> Secrets and Variables -> Actions`
 
 #### Secrets:
 - `REMOTE_HOST` - URL of the SFTP host AKA Host Name. For Stibo SaaS systems, this is in the format of '[yourSystemName]-sftp.mdm.stibosystems.com'.

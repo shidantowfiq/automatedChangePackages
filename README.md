@@ -19,7 +19,7 @@
 - `USERNAME` - User name that is used to connect to the remote host with priviledges to upload. For Stibo SaaS systems, this is the Username (DNS-1123 compliant) configured in the Accounts area of the SFTP Access Control screen.
 - `KEY` - SSH private key of user in Open SSH format, which is related to the public key configured on the SFTP Account of the Username on Stibo SaaS systems.
 
-Above secrets are used by external action: https://github.com/wangyucode/sftp-upload-action and there are more info about possible parameters. They can be applied only to job `SFTP uploader`.
+The secrets above are used by the external action: https://github.com/wangyucode/sftp-upload-action and there is more information available about additional parameters. These can be applied only to job `SFTP uploader`, if desired.
 
 #### Variables:
 - `REPO_PATH` - the path below the Branch of the repository containing change packages, followed by a forward slash. In this example `stibo-user/` (not including quotes) is the value for the Repository variable.

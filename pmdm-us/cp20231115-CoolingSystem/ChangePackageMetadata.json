@@ -2,7 +2,12 @@
   "version" : "2",
   "id" : "cp20231115-CoolingSystem",
   "name" : "cp20231115-CoolingSystem",
-  "metadata" : { },
+  "metadata" : {
+    "Purpose" : [ {
+      "value" : "Setup new Car Parts attributes and hierarchy with attribute links",
+      "unit" : ""
+    } ]
+  },
   "setupGroupId" : "Integrations",
   "uniqueId" : "cpk-e344fdd8-7e78-4a71-b920-670b000d5a36",
   "origin" : "pmdm-us",
@@ -14,6 +19,13 @@
     "name" : "cl",
     "itemURL" : "step://unit?id=unece.unit.CLT",
     "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Dimensions",
+    "itemURL" : "step://attribute?id=Dimensions",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -64,7 +76,7 @@
     "itemURL" : "step://product?id=1075479",
     "inclusion" : "Change",
     "importing" : "Force",
-    "instruction" : "",
+    "instruction" : "Approve recursively after installation",
     "recursive" : false
   }, {
     "name" : "High-definition Presentation Photo (PHOTOHDA)",
@@ -81,8 +93,15 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Bedingungsattribut",
+    "name" : "Condition Attribute",
     "itemURL" : "step://attribute?id=PMDM.AT.ConditionAttribute",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Material",
+    "itemURL" : "step://attribute?id=Material",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -214,7 +233,7 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Hide LOV Value ID From Smartsheet",
+    "name" : "Cacher l'ID de valeur LOV des Smartsheets",
     "itemURL" : "step://attribute?id=PMDM.AT.HideLovValueIdFromSmartsheet",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
@@ -230,12 +249,12 @@
   }, {
     "name" : "Product Specifications",
     "itemURL" : "step://attributegroup?id=ProductSpecifications",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
+    "inclusion" : "Change",
+    "importing" : "Force",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Completeness Score",
+    "name" : "Score de complétude",
     "itemURL" : "step://attribute?id=PMDM.AT.CompletenessScore",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
@@ -319,7 +338,7 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "PDX: Description",
+    "name" : "PDS : Description",
     "itemURL" : "step://attribute?id=PMDM.AT.PDS.Description",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
@@ -480,7 +499,7 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Number With Unit",
+    "name" : "Number with Unit",
     "itemURL" : "step://attribute?id=NumberWithUnit",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
@@ -529,6 +548,13 @@
     "instruction" : "",
     "recursive" : false
   }, {
+    "name" : "Color",
+    "itemURL" : "step://attribute?id=Color",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
     "name" : "qt (US)",
     "itemURL" : "step://unit?id=unece.unit.QT",
     "inclusion" : "Precondition",
@@ -536,7 +562,7 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Anzeigesequenz",
+    "name" : "Séquence d'affichage",
     "itemURL" : "step://attribute?id=PMDM.AT.DisplaySequence",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
@@ -774,7 +800,7 @@
     "instruction" : "",
     "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-11-15 12:46:57\"    UseContextLocale=\"false\">\n\n  <Qualifiers>\n    <Qualifier ID=\"en-US\">\n      <DimensionPointLink DimensionPointID=\"en-US\"/>\n    </Qualifier>\n  </Qualifiers>\n\n  <AttributeGroupList>\n\n  <AttributeGroup ID=\"CoolingSystem\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"en-US\">CoolingSystem</Name>\n  </AttributeGroup>\n  </AttributeGroupList>\n\n  <AttributeList>\n\n    <Attribute ID=\"NumberOfCoolingFins\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">Number Of Cooling Fins</Name>\n      <Validation BaseType=\"integer\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"CoolingSystem\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"OverflowPressure\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.80\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">OverflowPressure</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.80\"/>\n      </Validation>\n      <AttributeGroupLink AttributeGroupID=\"CoolingSystem\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Capacity\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.QT\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">Capacity</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.QT\"/>\n        <UnitLink UnitID=\"unece.unit.PT\"/>\n        <UnitLink UnitID=\"unece.unit.GLL\"/>\n        <UnitLink UnitID=\"unece.unit.LTR\"/>\n        <UnitLink UnitID=\"unece.unit.MLT\"/>\n        <UnitLink UnitID=\"unece.unit.CLT\"/>\n        <UnitLink UnitID=\"unece.unit.OZA\"/>\n      </Validation>\n      <AttributeGroupLink AttributeGroupID=\"ProductSpecifications\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <Products>\n    <Product ID=\"1075479\" UserTypeID=\"Level1\" ParentID=\"ProductsRoot\">\n      <Name>Car Parts</Name>\n      <Tables>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n      </Tables>\n      <Product ID=\"1075481\" UserTypeID=\"Level2\">\n        <Name>Cooling System</Name>\n        <AttributeLink AttributeID=\"OverflowPressure\"/>\n        <Tables>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n        </Tables>\n        <Product ID=\"1075483\" UserTypeID=\"Level3\">\n          <Name>Radiators</Name>\n          <AttributeLink AttributeID=\"NumberOfCoolingFins\"/>\n          <AttributeLink AttributeID=\"Capacity\"/>\n          <Tables>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n          </Tables>\n        </Product>\n      </Product>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-11-15 12:53:48\"    UseContextLocale=\"false\">\n\n  <Qualifiers>\n    <Qualifier ID=\"en-US\">\n      <DimensionPointLink DimensionPointID=\"en-US\"/>\n    </Qualifier>\n  </Qualifiers>\n\n  <AttributeGroupList>\n\n  <AttributeGroup ID=\"CoolingSystem\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"en-US\">CoolingSystem</Name>\n  </AttributeGroup>\n  <AttributeGroup ID=\"ProductSpecifications\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"en-US\">Product Specifications</Name>\n    <MetaData>\n      <Value ID=\"20\" AttributeID=\"AttributeGroupSection\">Product Details</Value>\n      <Value AttributeID=\"DisplaySequence\">3</Value>\n    </MetaData>\n  </AttributeGroup>\n  </AttributeGroupList>\n\n  <AttributeList>\n\n    <Attribute ID=\"NumberOfCoolingFins\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">Number Of Cooling Fins</Name>\n      <Validation BaseType=\"integer\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"CoolingSystem\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"OverflowPressure\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.80\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">OverflowPressure</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.80\"/>\n      </Validation>\n      <AttributeGroupLink AttributeGroupID=\"CoolingSystem\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Capacity\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.QT\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">Capacity</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.QT\"/>\n        <UnitLink UnitID=\"unece.unit.PT\"/>\n        <UnitLink UnitID=\"unece.unit.GLL\"/>\n        <UnitLink UnitID=\"unece.unit.LTR\"/>\n        <UnitLink UnitID=\"unece.unit.MLT\"/>\n        <UnitLink UnitID=\"unece.unit.CLT\"/>\n        <UnitLink UnitID=\"unece.unit.OZA\"/>\n      </Validation>\n      <AttributeGroupLink AttributeGroupID=\"ProductSpecifications\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <Products>\n    <Product ID=\"1075479\" UserTypeID=\"Level1\" ParentID=\"ProductsRoot\">\n      <Name>Car Parts</Name>\n      <Tables>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n      </Tables>\n      <Product ID=\"1075481\" UserTypeID=\"Level2\">\n        <Name>Cooling System</Name>\n        <AttributeLink AttributeID=\"OverflowPressure\"/>\n        <Tables>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n          <Table ID=\"105421\">\n            null          </Table>\n        </Tables>\n        <Product ID=\"1075483\" UserTypeID=\"Level3\">\n          <Name>Radiators</Name>\n          <AttributeLink AttributeID=\"NumberOfCoolingFins\"/>\n          <AttributeLink AttributeID=\"Capacity\"/>\n          <Tables>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n            <Table ID=\"105421\">\n              null            </Table>\n          </Tables>\n        </Product>\n      </Product>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\n",
   "signatory" : "SHTO",
-  "comment" : "Adding Car Parts"
+  "comment" : "Added \"Product Specifications\" attribute group"
 }

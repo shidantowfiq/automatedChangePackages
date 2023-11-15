@@ -16,7 +16,7 @@
     "inclusion" : "Change",
     "importing" : "Force",
     "instruction" : "",
-    "recursive" : false
+    "recursive" : true
   }, {
     "name" : "Level 1",
     "itemURL" : "step://objecttype?id=Level1",
@@ -32,15 +32,15 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "ETIM Abbreviation",
-    "itemURL" : "step://attribute?id=ETIM_Abbreviation",
+    "name" : "Display Sequence",
+    "itemURL" : "step://attribute?id=PMDM.AT.DisplaySequence",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Level 4",
-    "itemURL" : "step://objecttype?id=Level4",
+    "name" : "Business Unit Root",
+    "itemURL" : "step://objecttype?id=BusinessUnitRoot",
     "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
@@ -48,13 +48,6 @@
   }, {
     "name" : "Level 3",
     "itemURL" : "step://objecttype?id=Level3",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "ETIM Feature ID",
-    "itemURL" : "step://attribute?id=ETIM_Feature_ID",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -74,13 +67,6 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Marketing Description 2",
-    "itemURL" : "step://attribute?id=MktDesc2",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
     "name" : "Inherited Attribute",
     "itemURL" : "step://attribute?id=InheritedAttribute",
     "inclusion" : "Impacted",
@@ -90,7 +76,14 @@
   }, {
     "name" : "Attribute",
     "itemURL" : "step://objecttype?id=stibo.normalattribute",
-    "inclusion" : "Precondition",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "But",
+    "itemURL" : "step://attribute?id=PMDM.AT.Purpose",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -102,8 +95,8 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Externe Kennung",
-    "itemURL" : "step://attribute?id=PMDM.AT.ExternalIdentifier",
+    "name" : "Marketing Description 2",
+    "itemURL" : "step://attribute?id=MktDesc2",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -112,6 +105,13 @@
     "name" : "Products",
     "itemURL" : "step://objecttype?id=Products",
     "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Produkt Bilder",
+    "itemURL" : "step://referencetype?id=PMDM.IDRT.ProductImages",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -125,174 +125,6 @@
   }, {
     "name" : "Marketing Description 1",
     "itemURL" : "step://attribute?id=MktDesc1",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Conditional Metadata Attribute",
-    "itemURL" : "step://attribute?id=ConditionalMetadataAttribute",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Image principale",
-    "itemURL" : "step://referencetype?id=PMDM.IDRT.PrimaryProductImage",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Condition Attribute",
-    "itemURL" : "step://attribute?id=PMDM.AT.ConditionAttribute",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Country Root",
-    "itemURL" : "step://dimensionpoint?id=AllCountries",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Product Editor Section",
-    "itemURL" : "step://attribute?id=AttributeGroupSection",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Purpose",
-    "itemURL" : "step://attribute?id=Purpose",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Number With Unit",
-    "itemURL" : "step://attribute?id=NumberWithUnit",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Smartsheet Template Product",
-    "itemURL" : "step://referencetype?id=SmartsheetTemplateProduct",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "ELFRAttr",
-    "itemURL" : "step://attribute?id=ELFRAttr",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Display Name",
-    "itemURL" : "step://attribute?id=DisplayName",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Discontinued Products",
-    "itemURL" : "step://objecttype?id=DiscontinuedProducts",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "ETIM Description",
-    "itemURL" : "step://attribute?id=ETIM_Description",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Logistic Completeness",
-    "itemURL" : "step://attribute?id=PMDM.AT.LogisticCompleteness",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Marketings Completeness",
-    "itemURL" : "step://attribute?id=PMDM.AT.MarketingsCompleteness",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "PedalType",
-    "itemURL" : "step://attribute?id=PedalType",
-    "inclusion" : "Change",
-    "importing" : "Force",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Primary Product Classification",
-    "itemURL" : "step://objecttype?id=Product+user-type+root",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Brand",
-    "itemURL" : "step://attribute?id=Brand",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Display Sequence",
-    "itemURL" : "step://attribute?id=PMDM.AT.DisplaySequence",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Business Unit Root",
-    "itemURL" : "step://objecttype?id=BusinessUnitRoot",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Completeness Score",
-    "itemURL" : "step://attribute?id=Completeness+Score",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "ETIM Change Code",
-    "itemURL" : "step://attribute?id=ETIM_Change_Code",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "But",
-    "itemURL" : "step://attribute?id=PMDM.AT.Purpose",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Tree",
-    "itemURL" : "step://objecttype?id=Tree",
-    "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Produkt Bilder",
-    "itemURL" : "step://referencetype?id=PMDM.IDRT.ProductImages",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -312,15 +144,8 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Externe übergeordnete Kennung",
-    "itemURL" : "step://attribute?id=PMDM.AT.ExternalParentIdentifier",
-    "inclusion" : "Impacted",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "Hide LOV Value ID From Smartsheet",
-    "itemURL" : "step://attribute?id=PMDM.AT.HideLovValueIdFromSmartsheet",
+    "name" : "Primäres Produkt Bild",
+    "itemURL" : "step://referencetype?id=PMDM.IDRT.PrimaryProductImage",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -328,6 +153,13 @@
   }, {
     "name" : "Table Sort Order",
     "itemURL" : "step://attribute?id=TableDisplay",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Editor Section",
+    "itemURL" : "step://attribute?id=AttributeGroupSection",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -354,15 +186,15 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Vollständigkeitsindikator",
-    "itemURL" : "step://attribute?id=PMDM.AT.CompletenessScore",
+    "name" : " Benefits Bullet 3",
+    "itemURL" : "step://attribute?id=FeaturesBenefits3",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : " Benefits Bullet 3",
-    "itemURL" : "step://attribute?id=FeaturesBenefits3",
+    "name" : "Purpose",
+    "itemURL" : "step://attribute?id=Purpose",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -382,8 +214,8 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Texte d'aide attribut",
-    "itemURL" : "step://attribute?id=PMDM.AT.AttributeHelpText",
+    "name" : "Number With Unit",
+    "itemURL" : "step://attribute?id=NumberWithUnit",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -391,7 +223,7 @@
   }, {
     "name" : "Item",
     "itemURL" : "step://objecttype?id=Item",
-    "inclusion" : "Precondition",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -410,15 +242,15 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Country",
-    "itemURL" : "step://dimension?id=Country",
-    "inclusion" : "Precondition",
+    "name" : "Smartsheet Template Product",
+    "itemURL" : "step://referencetype?id=SmartsheetTemplateProduct",
+    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Validation Error Message",
-    "itemURL" : "step://attribute?id=ValidationErrorMessage",
+    "name" : "ELFRAttr",
+    "itemURL" : "step://attribute?id=ELFRAttr",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
@@ -427,13 +259,6 @@
     "name" : "Primary Product Hierarchy",
     "itemURL" : "step://product?id=Product+hierarchy+root",
     "inclusion" : "Precondition",
-    "importing" : "Ignore",
-    "instruction" : "",
-    "recursive" : false
-  }, {
-    "name" : "ETIM ID",
-    "itemURL" : "step://attribute?id=ETIM_ID",
-    "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
@@ -452,21 +277,28 @@
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "PDS : Description",
-    "itemURL" : "step://attribute?id=PMDM.AT.PDS.Description",
-    "inclusion" : "Impacted",
+    "name" : "PedalType",
+    "itemURL" : "step://attribute?id=PedalType",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Primary Product Classification",
+    "itemURL" : "step://objecttype?id=Product+user-type+root",
+    "inclusion" : "Precondition",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   }, {
-    "name" : "Translate Item Data",
-    "itemURL" : "step://attribute?id=TranslateItemData",
+    "name" : "Brand",
+    "itemURL" : "step://attribute?id=Brand",
     "inclusion" : "Impacted",
     "importing" : "Ignore",
     "instruction" : "",
     "recursive" : false
   } ],
-  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-11-15 07:52:10\"    UseContextLocale=\"false\">\n\n  <Qualifiers>\n    <Qualifier ID=\"en-US\">\n      <DimensionPointLink DimensionPointID=\"en-US\"/>\n    </Qualifier>\n  </Qualifiers>\n\n  <AttributeGroupList>\n\n  <AttributeGroup ID=\"SpecAttrs\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"en-US\">SpecAttrs</Name>\n  </AttributeGroup>\n  </AttributeGroupList>\n\n  <AttributeList>\n\n    <Attribute ID=\"PedalType\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">PedalType</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"SpecAttrs\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <Products>\n    <Product ID=\"1075471\" UserTypeID=\"Level2\" ParentID=\"127420\">\n      <Name>Accessories</Name>\n      <AttributeLink AttributeID=\"PedalType\"/>\n      <Tables>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n      </Tables>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\n",
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-11-15 12:13:28\"    UseContextLocale=\"false\">\n\n  <Qualifiers>\n    <Qualifier ID=\"en-US\">\n      <DimensionPointLink DimensionPointID=\"en-US\"/>\n    </Qualifier>\n  </Qualifiers>\n\n  <AttributeGroupList>\n\n  <AttributeGroup ID=\"SpecAttrs\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"en-US\">SpecAttrs</Name>\n  </AttributeGroup>\n  </AttributeGroupList>\n\n  <AttributeList>\n\n    <Attribute ID=\"PedalType\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">PedalType</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"SpecAttrs\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <Products>\n    <Product ID=\"1075471\" UserTypeID=\"Level2\" ParentID=\"127420\">\n      <Name>Accessories</Name>\n      <AttributeLink AttributeID=\"PedalType\"/>\n      <Tables>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n        <Table ID=\"105421\">\n          null        </Table>\n      </Tables>\n    </Product>\n  </Products>\n</STEP-ProductInformation>\n",
   "signatory" : "SHTO",
-  "comment" : "New attributes and node"
+  "comment" : "moved attr group to hierarcy"
 }

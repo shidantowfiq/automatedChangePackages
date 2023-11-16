@@ -1,0 +1,276 @@
+{
+  "version" : "2",
+  "id" : "cp20231115-attrGroup",
+  "name" : "cp20231115-attrGroup",
+  "metadata" : { },
+  "setupGroupId" : "Integrations",
+  "uniqueId" : "cpk-4cea6467-f202-4810-b5c2-4155d7a3d2e4",
+  "origin" : "pmdm-us",
+  "wasSigned" : "true",
+  "wasExported" : "false",
+  "installMode" : "false",
+  "aspect" : "All",
+  "items" : [ {
+    "name" : "cl",
+    "itemURL" : "step://unit?id=unece.unit.CLT",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Dimensions",
+    "itemURL" : "step://attribute?id=Dimensions",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "m³",
+    "itemURL" : "step://unit?id=unece.unit.MTQ",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "l",
+    "itemURL" : "step://unit?id=unece.unit.LTR",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Color",
+    "itemURL" : "step://attribute?id=Color",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "gal (US)",
+    "itemURL" : "step://unit?id=unece.unit.GLL",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "qt (US)",
+    "itemURL" : "step://unit?id=unece.unit.QT",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Anzeigesequenz",
+    "itemURL" : "step://attribute?id=PMDM.AT.DisplaySequence",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Capacity",
+    "itemURL" : "step://attribute?id=Capacity",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Lists of Values / LOVs",
+    "itemURL" : "step://ListOfValuesGroup?id=List+Of+Values+group+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Setup Group root",
+    "itemURL" : "step://SetupGroup?id=Setup+Group+hierarchy+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Business Action Type",
+    "itemURL" : "step://objecttype?id=stibo.businessrule.action",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute",
+    "itemURL" : "step://objecttype?id=stibo.normalattribute",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Zweck",
+    "itemURL" : "step://attribute?id=PMDM.AT.Purpose",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Tree",
+    "itemURL" : "step://objecttype?id=Tree",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Volume",
+    "itemURL" : "step://unitgroup?id=Volume",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "fl oz (US)",
+    "itemURL" : "step://unit?id=unece.unit.OZA",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Descriptions",
+    "itemURL" : "step://attributegroup?id=DescriptionAttributes",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "CreateProducts",
+    "itemURL" : "step://businessrule?id=CreateProducts",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Language",
+    "itemURL" : "step://dimension?id=Language",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Help Text",
+    "itemURL" : "step://attribute?id=AttributeHelpText",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Group",
+    "itemURL" : "step://attributegroup?id=AttributeGroup",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Table Sort Order",
+    "itemURL" : "step://attribute?id=TableDisplay",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Material",
+    "itemURL" : "step://attribute?id=Material",
+    "inclusion" : "Derived",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Editor Section",
+    "itemURL" : "step://attribute?id=AttributeGroupSection",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Display Sequence",
+    "itemURL" : "step://attribute?id=DisplaySequence",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Group",
+    "itemURL" : "step://objecttype?id=stibo.grouping+attribute",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Product Specifications",
+    "itemURL" : "step://attributegroup?id=ProductSpecifications",
+    "inclusion" : "Change",
+    "importing" : "Force",
+    "instruction" : "",
+    "recursive" : true
+  }, {
+    "name" : "pt (US)",
+    "itemURL" : "step://unit?id=unece.unit.PT",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Color LOV",
+    "itemURL" : "step://ListOfValues?id=ColorLOV",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Purpose",
+    "itemURL" : "step://attribute?id=Purpose",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Item",
+    "itemURL" : "step://objecttype?id=Item",
+    "inclusion" : "Impacted",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Language Root",
+    "itemURL" : "step://dimensionpoint?id=std.lang.all",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Attribute Groups",
+    "itemURL" : "step://attributegroup?id=Attribute+group+root",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Actions",
+    "itemURL" : "step://SetupGroup?id=Actions",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "ml",
+    "itemURL" : "step://unit?id=unece.unit.MLT",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  }, {
+    "name" : "Global Business Rules",
+    "itemURL" : "step://SetupGroup?id=GlobalBusinessRulesRoot",
+    "inclusion" : "Precondition",
+    "importing" : "Ignore",
+    "instruction" : "",
+    "recursive" : false
+  } ],
+  "signedGlobalXml" : "<STEP-ProductInformation ContextID=\"Context1\"  WorkspaceID=\"Main\"  ExportTime=\"2023-11-15 20:23:11\"    UseContextLocale=\"false\">\n\n  <Qualifiers>\n    <Qualifier ID=\"en-US\">\n      <DimensionPointLink DimensionPointID=\"en-US\"/>\n    </Qualifier>\n  </Qualifiers>\n\n  <AttributeGroupList>\n\n  <AttributeGroup ID=\"ProductSpecifications\" ShowInWorkbench=\"true\" ManuallySorted=\"false\" ParentID=\"Attribute group root\">\n    <Name QualifierID=\"en-US\">Product Specifications</Name>\n    <MetaData>\n      <Value ID=\"20\" AttributeID=\"AttributeGroupSection\">Product Details</Value>\n      <Value AttributeID=\"DisplaySequence\">3</Value>\n    </MetaData>\n  </AttributeGroup>\n  </AttributeGroupList>\n\n  <AttributeList>\n\n    <Attribute ID=\"Color\" MultiValued=\"true\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" HierarchicalFiltering=\"true\" ClassificationHierarchicalFiltering=\"false\" Mandatory=\"true\">\n      <Name QualifierID=\"en-US\">Color</Name>\n      <ListOfValueLink ListOfValueID=\"ColorLOV\"/>\n      <AttributeGroupLink AttributeGroupID=\"DescriptionAttributes\"/>\n      <AttributeGroupLink AttributeGroupID=\"ProductSpecifications\"/>\n      <AttributeGroupLink AttributeGroupID=\"AttributeGroup\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Material\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">Material</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"ProductSpecifications\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Capacity\" MultiValued=\"false\" DefaultUnitID=\"unece.unit.QT\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">Capacity</Name>\n      <Validation BaseType=\"number\" MinValue=\"\" MaxValue=\"\" MaxLength=\"\" InputMask=\"\">\n        <UnitLink UnitID=\"unece.unit.QT\"/>\n        <UnitLink UnitID=\"unece.unit.PT\"/>\n        <UnitLink UnitID=\"unece.unit.GLL\"/>\n        <UnitLink UnitID=\"unece.unit.LTR\"/>\n        <UnitLink UnitID=\"unece.unit.MLT\"/>\n        <UnitLink UnitID=\"unece.unit.CLT\"/>\n        <UnitLink UnitID=\"unece.unit.OZA\"/>\n      </Validation>\n      <AttributeGroupLink AttributeGroupID=\"ProductSpecifications\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n    <Attribute ID=\"Dimensions\" MultiValued=\"false\" ProductMode=\"Normal\" FullTextIndexed=\"false\" ExternallyMaintained=\"false\" Derived=\"false\" Mandatory=\"false\">\n      <Name QualifierID=\"en-US\">Dimensions</Name>\n      <Validation BaseType=\"text\" MinValue=\"\" MaxValue=\"\" MaxLength=\"100\" InputMask=\"\"/>\n      <AttributeGroupLink AttributeGroupID=\"ProductSpecifications\"/>\n      <UserTypeLink UserTypeID=\"Item\"/>\n    </Attribute>\n\n  </AttributeList>\n\n  <BusinessRules>\n    <BusinessRule ID=\"CreateProducts\" Scope=\"Global\" Type=\"Action\" RunPrivileged=\"false\">\n\n<!-- Definition:\nAction #1 (JavaScriptBusinessActionWithBinds):\n<config>\n  <bindings>\n    <binding alias=\"node\" type=\"Node\" contract=\"CurrentObjectBindContract\"/>\n  </bindings>\n  <messages/>\n  <javaScript>\n//var children = node.getChildren();\nvar iMax = 104;\nfor (var i=0; i<iMax; i++) {\n\tnode.createProduct(\"\",\"Item\");\n\tiCurrent = i + 1;\n\tlog.info(\"Created product \" + iCurrent + \" of \" + iMax);\n}\n  </javaScript>\n</config> -->\n      <SetupGroupLink SetupGroupID=\"Actions\"/>\n      <Name QualifierID=\"Qualifier root\">CreateProducts</Name>\n      <OnApprove ApproveSetup=\"Never\"/>\n      <Configuration>H4sIAAAAAAAAALVTwYrbMBA9r79i8CFkcWsn0EPBdsLGbWFLQ0M3pceglWWvFkVSZTlsW/rvHVmK16Es9NKLPXozevPm2aNF33J5IFoLzroDbw5UyYa3RYeAXWmf9lhZrJ+OAk7MdFzJMl6mixiYpKrmsi3jr/sPr9/G61VUbPqOS9Z1X3rBVhHACOwGOpjmPXT7row/khO5o4Zre87fUIuNvnH7sOGy7mLHhWw7YsiRWZThgSkEjslXw/6HZmX8iLSpILJN76xBofFqJmx+Mcnse69sjuP44Hkmfx4G8+F61to8cgSux5bo4QxwRgCdsoZQizL8jao3hkn7+f6RUetKqlARet0ITrpQK1XNAjwOVAnSjfleCB9lo45sKqTIxnsvWPPeGGW26C1p2f+26JOiRPCf5F6w0HHPjloQyza9rAXL/lHz84/xsuAsOxED9IGLGu2GEpyXactsFaD5dR65Er4lT5heLt7kUaMMzAewXOTAnWaXxjBJruFXdDWQUMNQ8s6ouqd27of0z1f+dWvZ0UfY44qHL45NOCSwREioNuWyUeFyNRDWoD0lBEsTGK8mZ0w1kyxKwwa//zJsAgwbUWSX+4YbmV2uZNjuP7x8t/X9AwAA</Configuration>\n      <ValidObjectTypes AllObjectTypesValid=\"false\">\n        <ValidObjectType ID=\"Tree\"/>\n      </ValidObjectTypes>\n    </BusinessRule>\n  </BusinessRules>\n</STEP-ProductInformation>\n",
+  "signatory" : "SHTO",
+  "comment" : ""
+}
